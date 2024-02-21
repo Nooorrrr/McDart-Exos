@@ -1,6 +1,6 @@
 //Late string variable
 
-late String adress;
+late var adress;
 void main() {
   adress = "USA";
 
