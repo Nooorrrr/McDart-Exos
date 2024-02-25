@@ -61,18 +61,18 @@ class Game {
         quiz.playerAnswer = int.tryParse(input ?? '');
 
         if (quiz.answerIsCorrect()) {
-          print("Correct!");
+          print("Correeccct");
           quiz.score++;
         } else {
           print(
-              "Incorrect. The correct answer is: ${currentQuestion.options![currentQuestion.rightAnswer! - 1]}");
+              "Incorrecct.\nThe correct answer is: ${currentQuestion.options![currentQuestion.rightAnswer! - 1]}");
         }
 
         quiz.numberOfQuestion++;
       }
     }
     print("----------------------------------------------------------");
-    print("Game over!\nYou scored : ${quiz.score}/${questions.length}");
+    print("Game over\nYou scored : ${quiz.score}/${questions.length}");
     print("----------------------------------------------------------");
   }
 }
